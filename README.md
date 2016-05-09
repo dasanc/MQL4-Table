@@ -1,19 +1,29 @@
 # MQL4-Table
 A library for creating mql4 table
+
 Usage:
+
 1. Put the file in the MQL4\Inclue folder
+
 2. In your indicator/expert/script type #include <Table.mqh>
+
 3. Declare your table by: Table *myTable = new Table(ChartID(), Subwindows, "tableName");
+
 4. Initialize your table by calling: 
     myTable.Create();  //use the default values; or
     myTable.Create(int x=0, int y=0, int w=0, int h=0, int xOffset=3, int yOffset=3, int cellWidth=0, int cellHeight=0, int cellSpace=2, int fontSize=8, string fontName="Terminal") //to set each value as you wishes
+
 5. Create a 2-Dimensional string array to story your data: string cells[rows][cols] //as MQL4 don't not support 2-D dynamic array, therefore, currently only support static 2-D array.
+
 6. To show your table: myTable.Show(cells);
 
 Features:
+
 1.  Auto cell-size
+
 2.  Auto table-size (as default window size)
-2.  Alternativate Color scheme: (under-testing)
+
+3.  Alternativate Color scheme: (under-testing)
 
 Public method description
 		//default constructor
