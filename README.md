@@ -26,11 +26,12 @@ Features:
 3.  Alternativate Color scheme: (under-testing)
 
 Public method description
-		//default constructor
-void		Table(long id, int subwin, string name);    //id:     the id of the chart, ChartID(), which the table will show
-	                                                    //subwin: the indicator window which the table will show, should >=0
-	                                                    //name:   unique name of the table, you can show more than one table in 
-	                                                    // 	      the chart by using different names
+	
+void	Table(long id, int subwin, string name);  	//default constructor  
+	//id:     the id of the chart, ChartID(), which the table will show
+	//subwin: the indicator window which the table will show, should >=0
+	//name:   unique name of the table, you can show more than one table in the chart by using different names
+	
 		//default initializer
 		void 		Create( int x=0, int y=0,   //table top-left coner co-ordinates with default values of (0,0)
 		                int w=0, int h=0,           //table width & height; default value 0 means use whole subwin size
