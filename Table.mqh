@@ -214,9 +214,9 @@ void Table::Table(long id, int subwin, string name){
 	_id = id;
 	_subwin = subwin;
 	_name = name;
-	_fontColor = ChartGetInteger(_id, CHART_COLOR_FOREGROUND, _subwin);
+	_fontColor = (color)ChartGetInteger(_id, CHART_COLOR_FOREGROUND, _subwin);
 	_altFontColor = _fontColor;
-	_bgColor = ChartGetInteger(_id, CHART_COLOR_BACKGROUND, _subwin);
+	_bgColor = (color)ChartGetInteger(_id, CHART_COLOR_BACKGROUND, _subwin);
 	_altBgColor = _bgColor;
 }
 void Table::~Table(){
