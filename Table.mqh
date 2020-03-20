@@ -151,9 +151,9 @@ class Table
 };	
 
 bool Table::Show(string &cells[][]){
-	if(_autoWidth || _autoHeight) _ComputeDimension(cells);
-	if(_autoWidth) _ComputeCellWidth(cells);
-	if(_autoHeight) _ComputeCellHeight(cells);
+	_ComputeDimension(cells);
+	_ComputeCellWidth(cells);
+	_ComputeCellHeight(cells);
 	for(int r=0; r<_rows; r++)
 	{
 		for(int c=0; c<_cols; c++)
